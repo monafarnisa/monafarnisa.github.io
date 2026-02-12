@@ -3,28 +3,5 @@
   font-size: 3em;
   font-weight: bold;
 }
-body {
-  background-color: #E6FAFA;
-}
 
-#quarto-content {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-}
 
-/* Light theme background */
-body[data-bs-theme="light"] {
-  background-color: #E6FAFA;
-  color: #222222;   /* dark readable text */
-}
-
-/* Make sure headings are dark */
-body[data-bs-theme="light"] h1,
-body[data-bs-theme="light"] h2,
-body[data-bs-theme="light"] h3,
-body[data-bs-theme="light"] h4,
-body[data-bs-theme="light"] h5,
-body[data-bs-theme="light"] h6 {
-  color: #111111;
-}
