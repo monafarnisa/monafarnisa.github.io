@@ -13,10 +13,10 @@ website:
   navbar: 
     search: true
     left: 
-      - text: Projects
-        href: index.qmd
       - text: About
         href: bio.qmd
+      - text: Projects
+        href: index.qmd
       #- text: Education
       #  href: bio.qmd
       #- text: resume

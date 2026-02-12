@@ -3,3 +3,18 @@
   font-size: 3em;
   font-weight: bold;
 }
+body {
+  background-color: #E6FAFA;
+}
+
+#quarto-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+body[data-bs-theme="light"] #quarto-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
