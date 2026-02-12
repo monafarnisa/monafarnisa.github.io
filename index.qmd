@@ -18,5 +18,5 @@ about:
       href: https://github.com/monafarnisa
     - icon: envelope # you'll need to the fontawesome extension to include icons: https://github.com/quarto-ext/fontawesome
       text: Email
-      href: mailto:farnisa@nceas.ucsb.edu
+      href: mailto:farnisamona@gmail.com
 ---

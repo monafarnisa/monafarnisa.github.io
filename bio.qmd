@@ -1,8 +1,8 @@
 ---
-title: "bio"
+title: "About"
 ---
 
-I am a Data Analyst for the [Western Wilfire Resilience Index](https://wildfireindex.org/) at the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). This is a new project and I am excited to be a part of the initial team tasked with launching this
+I am a Geospatial Data Analyst for the [Western Wilfire Resilience Index](https://wildfireindex.org/) at the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/). This is a new project and I am excited to be a part of the initial team tasked with launching this
 
 I am a passionate early career data enthusiast on a journey of exploration and discovery within the vast realm of data science. As I navigate this fascinating landscape, my dedication lies in honing my data analysis skills - from delving into statistical models to crafting compelling visualizations and learning new coding platforms, every step is a venture into the ever-evolving world of data science. What drives me is the genuine excitement about the endless possibilities that working with data can offer. I invite you to learn more about me on this growing website and join me as I work on some hobby coding projects here :)
 
