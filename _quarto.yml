@@ -39,10 +39,10 @@ website:
 
 format:
   html:
+      css: styles.css
     theme: 
       dark: darkly
       light: literia
-    css: styles.css
     toc: true
     page-layout: full
 
