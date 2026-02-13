@@ -23,13 +23,15 @@ about:
       href: mailto:farnisamona@gmail.com
 ---
 
+------------------------------------------------------------------------
+
 Hello! My name is Mona. Welcome to my website!
 
 I am a geospatial data scientist & analyst with interests in static and interactive visualizations, predictive and deterministic model development, spatial statistics, command line coding, and remotely sensed data. With over five years of experience coding, I have gained a wealth of knowledge and am excited to branch out my data skills working with new datasets and developing my coding skills.
 
 ------------------------------------------------------------------------
 
-My most recent job as a geospatial analyst on the [Wildfire Resilience Index](https://wildfireindex.org/) at the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/) was an exciting project that encompassed working with almost 100 geospatial data layers compiled across multiple social and ecological domains including infrastructure, health, vegetation, species, air, water, cultural heritage, and more.
+My most recent job as a geospatial analyst on the [Wildfire Resilience Index](https://wildfireindex.org/) at the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/) was an exciting project that encompassed working with almost 100 geospatial data layers across multiple social and ecological domains including infrastructure, health, vegetation, species, air, water, cultural heritage, and more.
 
 ------------------------------------------------------------------------
 

@@ -13,15 +13,16 @@ website:
   navbar: 
     search: true
     left: 
-      - text: Education
-        href: bio.qmd
+      - text: Education & Fieldwork
+        href: education.qmd
       - text: Projects
-        href: index.qmd
+        href: projects.qmd
       #- text: resume
       #  href: Farnisa_CV_2024.pdf
       - text: Publications
         href: publications.qmd
-      - text: Fieldwork
+      - text: Pictures
+        href: pictures.qmd
       - text: biking
         href: biking.qmd
     right: 
@@ -32,8 +33,8 @@ website:
   
   page-footer:
     background: light # or dark
-    left: Copyright 2024, Mona Farnisa
-    right: This website is built with {{< fa brands r-project title="R Project" >}}, [Quarto](https://quarto.org/), and {{< fa brands github >}}
+    left: Copyright 2026, Mona Farnisa
+    right: This website is built with [Quarto](https://quarto.org/), and {{< fa brands github >}}
 
 
 format:
