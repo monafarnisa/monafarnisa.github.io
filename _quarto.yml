@@ -13,16 +13,15 @@ website:
   navbar: 
     search: true
     left: 
-      - text: About
+      - text: Education
         href: bio.qmd
       - text: Projects
         href: index.qmd
-      #- text: Education
-      #  href: bio.qmd
       #- text: resume
       #  href: Farnisa_CV_2024.pdf
       - text: Publications
         href: publications.qmd
+      - text: Fieldwork
       - text: biking
         href: biking.qmd
     right: 
