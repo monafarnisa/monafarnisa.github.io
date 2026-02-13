@@ -5,6 +5,8 @@ project:
 website:
   title: "Mona Farnisa"
   site-url: https://monafarnisa.github.io/
+  favicon: images/favicon-32x32.png
+
   
   google-analytics:
     tracking-id: "G-G-W9WW2GESRZ"
@@ -17,8 +19,6 @@ website:
         href: education.qmd
       - text: Projects
         href: projects.qmd
-      #- text: resume
-      #  href: Farnisa_CV_2024.pdf
       - text: Publications
         href: publications.qmd
       - text: Pictures
@@ -30,6 +30,8 @@ website:
         href: https://github.com/monafarnisa
       - icon: linkedin
         href: https://www.linkedin.com/in/monafarnisa/
+      - icon: email
+        href: farnisamona@gmail.com
   
   page-footer:
     background: light # or dark

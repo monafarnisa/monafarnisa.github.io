@@ -1,27 +1,38 @@
 ---
-title: "Education"
+title: "Education & Fieldwork"
 image: images/hemp_field_crop.jpg
 toc: false
 
 about: 
-  #id: hero-heading # by placing the template content within a hero-heading block,
   template: jolla
   image-shape: rectangle
   #image-width: 40em
-  image-width: 80%
+  image-width: 60%
 ---
 
 ------------------------------------------------------------------------
 
-MS in Natural Resources & Environmental Science \| May 2020 - December 2022 \| University of Nevada, Reno \| Reno, NV
+M.Sc. in Natural Resources & Environmental Science
+
+University of Nevada, Reno
+
+May 2020 - December 2022
 
 ------------------------------------------------------------------------
 
-BS in Environmental Science \| August 2014 - June 2017 \| Amsterdam University College \| Amsterdam, The Netherlands
+B.Sc. in Energy, Climate, Sustainability and Environmental Science
+
+Amsterdam University College, The Netherlands
+
+August 2014 - June 2017
 
 ------------------------------------------------------------------------
 
-Semester Abroad \| June - December 2016 \| University of Queensland \| Brisbane, Australia
+Semester Abroad
+
+University of Queensland, Australia
+
+June - December 2016
 
 ------------------------------------------------------------------------
 
