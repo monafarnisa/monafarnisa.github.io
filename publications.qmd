@@ -1,5 +1,14 @@
 ---
 title: "Publications"
+
+#image: images/hemp_field_crop.jpg
+toc: false
+
+about: 
+  template: jolla
+  #image-shape: rectangle
+  #image-width: 40em
+  #image-width: 60%
 ---
 
 ------------------------------------------------------------------------
