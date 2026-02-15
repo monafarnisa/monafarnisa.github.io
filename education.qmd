@@ -1,5 +1,5 @@
 ---
-title: "Education & Fieldwork"
+title: "Education"
 image: images/hemp_field_crop.jpg
 toc: false
 

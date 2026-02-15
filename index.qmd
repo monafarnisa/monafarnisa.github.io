@@ -18,7 +18,7 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/monafarnisa
-    - icon: envelope # you'll need to the fontawesome extension to include icons: https://github.com/quarto-ext/fontawesome
+    - icon: envelope # fontawesome extension to include icons: https://github.com/quarto-ext/fontawesome
       text: Email
       href: mailto:farnisamona@gmail.com
 ---
@@ -35,7 +35,7 @@ My most recent job as a geospatial analyst on the [Wildfire Resilience Index](ht
 
 ------------------------------------------------------------------------
 
-I have a Master of Science in Natural Resources and Environmental Science from the University of Nevada, Reno where I was part of [The Sustainable Horticulture Lab](https://naes.unr.edu/barrios/default.aspx). My research was on plant environment interactions, crop yield analytics, and fertilization tracking. Read more about my graduate research on the Education tab.
+I have a Master of Science in Natural Resources and Environmental Science from the University of Nevada, Reno where I was part of [The Sustainable Horticulture Lab](https://naes.unr.edu/barrios/default.aspx). My research was on plant environment interactions, crop yield analytics, and fertilization tracking.
 
 I have a Bachelor of Science from Amsterdam University College in The Netherlands where I majored in Energy, Climate, and Sustainability.
 

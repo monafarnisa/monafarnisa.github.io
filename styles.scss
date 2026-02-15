@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+// Colors
+$orange: #F80;
+
+// Base document colors
+$footer-bg: $orange; // footer 
+
+$main-title-size: 3em;
+$main-title-weight: bold;
+
+.quarto-title-block {
+  .title {
+    text-align: center;
+    font-size: $main-title-size;
+    font-weight: $main-title-weight;
+  }
+}
