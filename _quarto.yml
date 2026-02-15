@@ -34,7 +34,7 @@ website:
         href: farnisamona@gmail.com
   
   page-footer:
-    #background: light # or dark
+    background: light # or dark
     left: Copyright 2026, Mona Farnisa
     right: This website is built with [Quarto](https://quarto.org/) and {{< fa brands github >}}
 
@@ -42,8 +42,9 @@ website:
 format:
   html:
     theme: 
-      - darkly
-      - styles:scss
+      - dark: darkly
+      - light: literia
+      - styles.scss
     toc: true
     page-layout: full
 
