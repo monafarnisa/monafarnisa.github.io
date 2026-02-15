@@ -24,8 +24,8 @@ website:
         href: publications.qmd
       - text: Pictures
         href: pictures.qmd
-      - #text: biking
-        #href: biking.qmd
+      #text: biking
+      #href: biking.qmd
     right: 
       - icon: github
         href: https://github.com/monafarnisa
