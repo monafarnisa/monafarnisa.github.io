@@ -42,8 +42,7 @@ website:
 format:
   html:
     theme: 
-      dark: darkly
-      light: literia
+      - darkly
       - styles.scss
     toc: true
     page-layout: full
