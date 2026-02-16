@@ -1,5 +1,5 @@
 ---
-title: "Education"
+#title: "Education"
 image: images/hemp_field_crop.jpg
 toc: false
 
@@ -9,6 +9,8 @@ about:
   image-shape: round
   image-title: Conducting fieldwork on Northern Nevada hemp varieties. 
 ---
+
+# Education
 
 ------------------------------------------------------------------------
 
@@ -36,23 +38,19 @@ University of Queensland, Australia \| June - December 2016
 
 ------------------------------------------------------------------------
 
-Dayton Valley Aquaponics \| Nevada, USA \| 2018
+# Research
 
 ------------------------------------------------------------------------
 
-:::: columns
-::: {.column width="60%"}
+Dayton Valley Aquaponics \| Nevada, USA \| 2018
+
+*Brix concentrations of greenhouse tomato varieties on varying nutrient cycles.*
+
+------------------------------------------------------------------------
+
 Heron Island Research Station \| Queensland, Australia \| 2016
 
 *Defense properties of coral mucus in the Great Barrier Reef against marine and human bacteria.*
-:::
-::::
-
-:::: columns
-::: {.column width="40%"}
-![](images/GBR_starfish.jpg)
-:::
-::::
 
 ------------------------------------------------------------------------
 
