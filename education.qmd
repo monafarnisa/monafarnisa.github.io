@@ -5,35 +5,73 @@ toc: false
 
 about: 
   template: jolla
+  image-width: 40%
+  image-shape: rounded
+  image-title: Conducting fieldwork on Northern Nevada hemp varieties. 
+---
+
+------------------------------------------------------------------------
+
+M.Sc. in Natural Resources, Ecology & Environmental Science
+
+Minor: Data Analysis, Statistics, GIS
+
+University of Nevada, Reno \| May 2020 - December 2022
+
+------------------------------------------------------------------------
+
+B.Sc. in Energy, Climate, Sustainability & Environmental Science
+
+Minor: Agroecology, GIS
+
+Amsterdam University College, The Netherlands \| August 2014 - June 2017
+
+------------------------------------------------------------------------
+
+Study Semester Abroad
+
+Track: Ecotoxicology, Marine Ecology
+
+University of Queensland, Australia \| June - December 2016
+
+------------------------------------------------------------------------
+
+---
+title: "Fieldwork"
+subtitle: "Research"
+#image: images/GBR_starfish.jpg
+toc: false
+
+about: 
+  template: jolla
   image-shape: rectangle
-  #image-width: 40em
   image-width: 60%
 ---
 
 ------------------------------------------------------------------------
 
-M.Sc. in Natural Resources & Environmental Science
-
-University of Nevada, Reno
-
-May 2020 - December 2022
+Dayton Valley Aquaponics \| Nevada, USA \| 2018
 
 ------------------------------------------------------------------------
 
-B.Sc. in Energy, Climate, Sustainability and Environmental Science
+:::: columns
+::: {.column width="60%"}
+Heron Island Research Station \| Queensland, Australia \| 2016
 
-Amsterdam University College, The Netherlands
+*Defense properties of coral mucus in the Great Barrier Reef against marine and human bacteria.*
+:::
+::::
 
-August 2014 - June 2017
+:::: columns
+::: {.column width="40%"}
+![](images/GBR_starfish.jpg)
+:::
+::::
 
 ------------------------------------------------------------------------
 
-Semester Abroad
+Moreton Bay Research Station \| Stradbroke Island, Queensland, Australia \| 2016
 
-University of Queensland, Australia
-
-June - December 2016
+*Determining PSII herbicide concentrations of five waterbodies in Queensland, Australia using combined chemical and bioassay analysis approach.*
 
 ------------------------------------------------------------------------
-
-#
