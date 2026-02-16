@@ -36,20 +36,6 @@ University of Queensland, Australia \| June - December 2016
 
 ------------------------------------------------------------------------
 
----
-title: "Fieldwork"
-subtitle: "Research"
-#image: images/GBR_starfish.jpg
-toc: false
-
-about: 
-  template: jolla
-  image-shape: rectangle
-  image-width: 60%
----
-
-------------------------------------------------------------------------
-
 Dayton Valley Aquaponics \| Nevada, USA \| 2018
 
 ------------------------------------------------------------------------
