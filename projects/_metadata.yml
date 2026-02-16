@@ -1,0 +1,3 @@
+# Shared options for all project posts in this folder.
+# Uncomment to freeze computational output (recommended for heavy or fragile code):
+# freeze: true

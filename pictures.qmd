@@ -1,0 +1,18 @@
+---
+title: "Pictures"
+subtitle: "Fieldwork and moments from the field"
+toc: false
+---
+
+A collection of photos from fieldwork, research, and travel. You can replace this page with a gallery or link to an external album.
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+**Fieldwork** — Research and data collection in the field.
+:::
+::: {.g-col-12 .g-col-md-6}
+**Places** — Labs, stations, and sites.
+:::
+:::
+
+*To turn this into a real gallery, add images under `images/` and reference them here, or use a Quarto listing/grid of image files.*

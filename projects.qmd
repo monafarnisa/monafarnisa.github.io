@@ -1,0 +1,17 @@
+---
+title: "Projects"
+subtitle: "Data visualizations, code, and analyses"
+listing:
+  contents: projects
+  sort: "date desc"
+  type: grid
+  feed: true
+  fields: [image, date, title, description]
+  grid-columns: 2
+  page-size: 12
+  filter-ui: true
+  sort-ui: [date, title]
+toc: false
+---
+
+This page showcases individual projects: data visualizations, spatial analyses, and code. Each post includes context, methods, and links to code or interactive dashboards where relevant.

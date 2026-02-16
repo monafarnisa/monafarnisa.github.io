@@ -1,0 +1,31 @@
+---
+title: "Wildfire Resilience Index"
+description: "Geospatial analyst on a nationwide index integrating ~100 layers across social and ecological domains — infrastructure, health, vegetation, species, air, water, and cultural heritage."
+author: "Mona Farnisa"
+date: "2024-06-01"
+image: images/hemp_field_crop.jpg
+categories: [geospatial, wildfire, NCEAS]
+---
+
+## Overview
+
+At the [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/), I worked as a geospatial analyst on the [Wildfire Resilience Index](https://wildfireindex.org/), integrating nearly 100 geospatial data layers across multiple domains.
+
+## Domains
+
+- **Infrastructure** — exposure and capacity
+- **Health** — population and vulnerability
+- **Vegetation & species** — fuels and biodiversity
+- **Air & water** — quality and availability
+- **Cultural heritage** — nationwide exposure (see Publications)
+
+## Tools & methods
+
+- R, Python, QGIS
+- Spatial aggregation and weighting
+- Deterministic and index-based modeling
+
+## Links
+
+- [Wildfire Resilience Index](https://wildfireindex.org/)
+- Related publication: *Nationwide exposure of United States cultural heritage to wildfire* (In Review at Scientific Reports)

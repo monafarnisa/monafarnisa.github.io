@@ -1,18 +1,114 @@
 /*-- scss:defaults --*/
 
-// Colors
-$orange: #F80;
+// Typography & colors — modern, readable, data-science friendly
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "Fira Code", "Consolas", monospace !default;
+$headings-font-weight: 600 !default;
+$body-color: #212529 !default;
+$body-bg: #f8f9fa !default;
+$primary: #2c5282 !default;
+$link-color: #2c5282 !default;
+$link-hover-color: #1a365d !default;
+$code-color: #c7254e !default;
+$code-bg: #f4f4f4 !default;
 
-// Base document colors
-$footer-bg: $orange; // footer 
+/*-- scss:rules --*/
 
-$main-title-size: 3em;
-$main-title-weight: bold;
+// Import Google Fonts (Quarto will inline; optional: add to _quarto.yml margin-header)
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
+// Main title block (home/about)
 .quarto-title-block {
   .title {
-    text-align: center;
-    font-size: $main-title-size;
-    font-weight: $main-title-weight;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: $primary;
   }
+  .subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+}
+
+// About / Jolla template tweaks
+.about-entity {
+  .about-image {
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  .about-links a {
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .about-links a:hover {
+    transform: translateY(-1px);
+  }
+}
+
+// Code blocks — clearer hierarchy
+pre.sourceCode {
+  border-radius: 8px;
+  border-left: 4px solid $primary;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+code:not(pre sourceCode code) {
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// Cards and listing grid (Projects)
+.quarto-listing-default .listing-card,
+.grid .quarto-listing-default .listing-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+.quarto-listing-default .listing-card:hover,
+.grid .quarto-listing-default .listing-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.listing-card-title a {
+  font-weight: 600;
+  color: $primary;
+}
+.listing-card-description {
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+// Navbar
+.navbar {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+// Page content spacing
+.column-page {
+  max-width: 900px;
+}
+.column-page > * + * {
+  margin-top: 1.25rem;
+}
+
+// Section dividers (optional; you use ---- in content)
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 2rem 0;
+}
+
+// Footer
+.page-footer {
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
 }

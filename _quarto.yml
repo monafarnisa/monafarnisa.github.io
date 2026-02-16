@@ -5,16 +5,19 @@ project:
 website:
   title: "Mona Farnisa"
   site-url: https://monafarnisa.github.io/
+  description: "Geospatial data scientist & analyst — visualizations, spatial statistics, and code."
   favicon: images/favicon-32x32.png
 
-  
   google-analytics:
     tracking-id: "G-G-W9WW2GESRZ"
     anonymize-ip: true
 
-  navbar: 
+  navbar:
+    background: primary
     search: true
-    left: 
+    left:
+      - text: Home
+        href: index.qmd
       - text: Education & Fieldwork
         href: education.qmd
       - text: Projects
@@ -23,29 +26,29 @@ website:
         href: publications.qmd
       - text: Pictures
         href: pictures.qmd
-      #text: biking
-      #href: biking.qmd
-    right: 
+    right:
+      - icon: rss
+        href: projects.xml
       - icon: github
         href: https://github.com/monafarnisa
       - icon: linkedin
         href: https://www.linkedin.com/in/monafarnisa/
       - icon: envelope
-        href: farnisamona@gmail.com
-  
-  page-footer:
-    #background: light # or dark
-    left: Copyright 2026, Mona Farnisa
-    right: This website is built with [Quarto](https://quarto.org/) and {{< fa brands github >}}
+        href: mailto:farnisamona@gmail.com
 
+  page-footer:
+    left: Copyright 2026, Mona Farnisa
+    right: Built with [Quarto](https://quarto.org/) · {{< fa brands github >}}
 
 format:
   html:
-    theme: 
-      - darkly
+    theme:
+      - litera
       - styles.scss
     toc: true
     page-layout: full
+    code-block-bg: true
+    code-block-border-left: "4px solid #0d6efd"
 
 editor: visual
 
