@@ -6,7 +6,7 @@ toc: false
 about: 
   template: jolla
   image-width: 40%
-  image-shape: rounded
+  image-shape: round
   image-title: Conducting fieldwork on Northern Nevada hemp varieties. 
 ---
 
