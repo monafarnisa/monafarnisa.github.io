@@ -24,24 +24,29 @@
     />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#top" class="logo">Mona&nbsp;Farnisa</a>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#work">Projects</a>
-          <a href="#viz">Visualizations</a>
-          <a href="#publications">Publications</a>
-          <a href="#education">Education</a>
-        </nav>
-      </div>
-    </header>
+    <aside class="site-sidebar">
+      <a href="#top" class="logo">Mona&nbsp;Farnisa</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Projects</a>
+        <a href="#viz">Visualizations</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+      </nav>
+    </aside>
 
-    <main id="top">
+    <main id="top" class="main-content">
       <!-- Hero -->
       <section class="hero" id="about">
         <div class="container hero-grid">
+          <div class="hero-photo">
+            <img
+              src="../images/surf_headshot.JPG"
+              alt="Mona Farnisa"
+              class="hero-headshot"
+            />
+          </div>
           <div class="hero-text">
             <p class="eyebrow">Geospatial Data Scientist</p>
             <h1>Maps, models, and stories about changing landscapes.</h1>
@@ -232,9 +237,9 @@
       </section>
 
       <!-- Visualizations & code -->
-      <section class="section section-highlight" id="viz">
-        <div class="container viz-layout">
-          <div class="viz-text">
+      <section class="section section-highlight section-centered" id="viz">
+        <div class="container viz-layout-centered">
+          <div class="section-header section-header-centered">
             <h2>Visualizations &amp; cartography</h2>
             <p>
               I love building maps that surface both vulnerability and resilience—often
@@ -259,7 +264,7 @@
               </ul>
             </div>
           </div>
-          <div class="viz-figure">
+          <div class="viz-figure viz-figure-centered">
             <figure>
               <img
                 src="assets/vulnerable_populations_medical_access.png"
@@ -276,9 +281,9 @@
       </section>
 
       <!-- Publications -->
-      <section class="section" id="publications">
-        <div class="container">
-          <div class="section-header">
+      <section class="section section-centered" id="publications">
+        <div class="container container-narrow">
+          <div class="section-header section-header-centered">
             <h2>Publications</h2>
             <p>Work at the intersection of wildfire, agriculture, and spatial analysis.</p>
           </div>
@@ -390,4 +395,3 @@
     </footer>
   </body>
 </html>
-
