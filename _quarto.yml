@@ -24,8 +24,7 @@ website:
         href: projects.qmd
       - text: Publications
         href: publications.qmd
-      - #text: Pictures
-        #href: pictures.qmd
+
     right:
       - icon: rss
         href: projects.xml
