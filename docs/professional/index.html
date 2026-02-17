@@ -18,93 +18,97 @@
     />
   </head>
   <body>
-    <aside class="site-sidebar">
-      <a href="#about" class="logo">Mona&nbsp;Farnisa</a>
-      <nav class="nav">
+    <header class="navbar">
+      <a href="#about" class="navbar-logo">Mona Farnisa</a>
+      <nav class="navbar-nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#work">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
         <a href="#viz">Visualizations</a>
         <a href="#publications">Publications</a>
         <a href="#education">Education</a>
       </nav>
-    </aside>
+    </header>
 
-    <main id="top" class="main-content">
+    <main class="main-content">
       <!-- Hero / About -->
-      <section id="about" class="section intro">
-        <div class="section-inner intro-inner">
-          <img
-            src="../images/surf_headshot.JPG"
-            alt="Mona Farnisa"
-            class="hero-headshot"
-          />
-          <p class="intro-label">Hello there</p>
-          <p class="eyebrow">Geospatial Data Scientist</p>
-          <h1>Maps, models, and stories about changing landscapes.</h1>
-          <p class="intro-blurb">
-            I work at the intersection of geospatial analysis, data visualization, and
-            environmental science—building maps and tools that translate complex
-            datasets into clear, actionable insights. I'm focused on wildfire resilience,
-            cultural heritage, and climate impacts.
-          </p>
-          <div class="intro-tags">
-            <span class="tag tag-1">Python</span>
-            <span class="tag tag-2">R</span>
-            <span class="tag tag-3">ArcGIS</span>
-            <span class="tag tag-4">Cartography</span>
-            <span class="tag tag-5">Spatial statistics</span>
-          </div>
-          <div class="intro-links">
-            <a href="#work">View my work ↓</a>
-            <a href="https://github.com/monafarnisa" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="mailto:farnisamona@gmail.com">Email</a>
+      <section id="about" class="section hero">
+        <div class="container">
+          <p class="hero-label">Hello there</p>
+          <div class="hero-flex">
+            <img
+              src="../images/surf_headshot.JPG"
+              alt="Mona Farnisa"
+              class="hero-headshot"
+            />
+            <div class="hero-text">
+              <h1>I'm Mona Farnisa, a geospatial data scientist who turns spatial data into maps and insights.</h1>
+              <p class="hero-blurb">
+                I work at the intersection of geospatial analysis, data visualization, and
+                environmental science—building maps and tools that translate complex
+                datasets into clear, actionable insights. Focused on wildfire resilience,
+                cultural heritage, and climate impacts.
+              </p>
+              <div class="hero-tags">
+                <span class="tag tag-python">Python</span>
+                <span class="tag tag-r">R</span>
+                <span class="tag tag-arcgis">ArcGIS</span>
+                <span class="tag tag-cartography">Cartography</span>
+                <span class="tag tag-spatial">Spatial analytics</span>
+              </div>
+              <div class="hero-links">
+                <a href="#work">View my work ↓</a>
+                <a href="https://github.com/monafarnisa" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="mailto:farnisamona@gmail.com">Email</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Skills / Toolbox -->
       <section id="skills" class="section">
         <div class="container">
-          <h2><span class="section-num">01</span> What I work with</h2>
-          <p class="section-blurb">Combining environmental science training with geospatial engineering to build reproducible, transparent analyses.</p>
+          <h2><span class="section-num">01</span> Toolbox</h2>
+          <p class="section-blurb">Combining environmental science training with geospatial engineering. Python, R, and ArcGIS are my core stack.</p>
           <div class="toolbox-grid">
+            <div class="tool-group">
+              <h3>Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+              </ul>
+            </div>
             <div class="tool-group">
               <h3>Geospatial</h3>
               <ul>
-                <li>Raster &amp; vector processing</li>
-                <li>Projections &amp; map design</li>
-                <li>Static &amp; interactive mapping</li>
+                <li>ArcGIS · QGIS</li>
+                <li>GeoPandas · sf · terra</li>
+                <li>Rasterio · Raster processing</li>
               </ul>
             </div>
             <div class="tool-group">
-              <h3>Analytics &amp; modeling</h3>
+              <h3>Data &amp; Viz</h3>
               <ul>
-                <li>Spatial statistics &amp; aggregation</li>
-                <li>Exposure &amp; vulnerability indices</li>
-                <li>Reproducible workflows</li>
-              </ul>
-            </div>
-            <div class="tool-group">
-              <h3>Tools</h3>
-              <ul>
-                <li>Python, R</li>
-                <li>ArcGIS, QGIS, GeoPandas, sf</li>
-                <li>Rasterio, terra, Git &amp; GitHub</li>
+                <li>Spatial statistics</li>
+                <li>Cartography &amp; mapping</li>
+                <li>ggplot2 · Matplotlib · Plotly</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Projects -->
+      <!-- Work (Selected Projects) -->
       <section id="work" class="section">
         <div class="container">
-          <h2><span class="section-num">02</span> Selected projects</h2>
-          <p class="section-blurb">A few examples of how I use spatial data, visualization, and modeling to answer environmental questions.</p>
+          <h2><span class="section-num">02</span> Work</h2>
+          <p class="section-blurb">How I use spatial data, visualization, and modeling to answer environmental questions.</p>
 
           <div class="project-list">
-            <article class="project">
+            <article class="project-card">
               <div class="project-header">
                 <span class="project-emoji">🔥</span>
                 <span class="project-cats">Wildfire · Geospatial index</span>
@@ -117,7 +121,7 @@
               <a href="https://wildfireindex.org/" class="project-link" target="_blank" rel="noreferrer">View the Wildfire Resilience Index →</a>
             </article>
 
-            <article class="project">
+            <article class="project-card">
               <div class="project-header">
                 <span class="project-emoji">🌾</span>
                 <span class="project-cats">Agriculture · Field experiment</span>
@@ -130,7 +134,7 @@
               <a href="https://doi.org/10.1371/journal.pone.0284537" class="project-link" target="_blank" rel="noreferrer">Read the publication →</a>
             </article>
 
-            <article class="project">
+            <article class="project-card">
               <div class="project-header">
                 <span class="project-emoji">🏛️</span>
                 <span class="project-cats">Climate · Cultural heritage</span>
@@ -138,7 +142,7 @@
               <h3>Cultural heritage &amp; wildfire exposure</h3>
               <p>Nationwide assessment of how cultural heritage sites in the United States intersect with wildfire risk, combining heritage inventories with hazard and exposure modeling.</p>
               <div class="project-tools">
-                <code>Spatial joins</code><code>Risk &amp; exposure</code><code>Cartography</code>
+                <code>Spatial joins</code><code>Risk &amp; exposure</code><code>ArcGIS</code><code>Cartography</code>
               </div>
               <p class="muted"><em>In review at Scientific Reports.</em></p>
             </article>
@@ -146,19 +150,43 @@
         </div>
       </section>
 
+      <!-- Projects & Code (Coming Soon) -->
+      <section id="projects" class="section projects-coming">
+        <div class="container">
+          <h2><span class="section-num">03</span> Projects &amp; Code</h2>
+          <p class="section-blurb">Reproducible scripts, tutorials, and project walkthroughs—coming soon.</p>
+
+          <div class="coming-soon-grid">
+            <div class="coming-card">
+              <span class="coming-emoji">🐍</span>
+              <h3>Python workflows</h3>
+              <p>GeoPandas pipelines, spatial aggregation scripts, and map automation.</p>
+            </div>
+            <div class="coming-card">
+              <span class="coming-emoji">📊</span>
+              <h3>R spatial analysis</h3>
+              <p>sf, terra, and tidyverse-based reproducible analyses.</p>
+            </div>
+            <div class="coming-card">
+              <span class="coming-emoji">🗺️</span>
+              <h3>ArcGIS &amp; cartography</h3>
+              <p>Map design, symbology, and publication-ready exports.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Visualizations -->
       <section id="viz" class="section">
         <div class="container">
-          <h2><span class="section-num">03</span> Visualizations &amp; cartography</h2>
-          <p>
-            I love building maps that surface both vulnerability and resilience—often
-            by combining demographic, infrastructural, and environmental datasets into
-            layered visual stories.
+          <h2><span class="section-num">04</span> Data visualizations</h2>
+          <p class="section-blurb">
+            I build maps that surface vulnerability and resilience—combining demographic,
+            infrastructural, and environmental datasets into layered visual stories.
           </p>
           <p>
-            Below is an example of how I translate complex wildfire and health data
-            into a paired visualization of vulnerability and access to care. I will
-            add a detailed, reproducible code walkthrough here using Python and R.
+            Below is an example of how I translate complex wildfire and health data into
+            a paired visualization. Full code and narrative walkthrough coming soon.
           </p>
           <div class="sidebar-box">
             <p class="code-callout-label">Coming soon</p>
@@ -179,7 +207,7 @@
       <!-- Publications -->
       <section id="publications" class="section">
         <div class="container">
-          <h2><span class="section-num">04</span> Publications</h2>
+          <h2><span class="section-num">05</span> Publications</h2>
           <p class="section-blurb">Work at the intersection of wildfire, agriculture, and spatial analysis.</p>
 
           <div class="pub-item">
@@ -200,27 +228,23 @@
       <!-- Education -->
       <section id="education" class="section">
         <div class="container">
-          <h2><span class="section-num">05</span> Education</h2>
+          <h2><span class="section-num">06</span> Education</h2>
           <p class="section-blurb">Training across environmental science, data analysis, and sustainability.</p>
 
           <div class="about-grid">
-            <div class="about-text">
-              <div class="sidebar-box">
-                <h3>Education</h3>
-                <p><strong>M.Sc.</strong> Natural Resources, Ecology &amp; Environmental Science<br>University of Nevada, Reno · Minor in Data Analysis, Statistics, GIS</p>
-                <p><strong>B.Sc.</strong> Energy, Climate, Sustainability &amp; Environmental Science<br>Amsterdam University College, The Netherlands · Minor in Agroecology, GIS</p>
-                <p><strong>Study abroad</strong> — Ecotoxicology &amp; Marine Ecology<br>University of Queensland, Australia · Heron Island &amp; Moreton Bay</p>
-              </div>
+            <div class="sidebar-box">
+              <h3>Education</h3>
+              <p><strong>M.Sc.</strong> Natural Resources, Ecology &amp; Environmental Science<br>University of Nevada, Reno · Minor in Data Analysis, Statistics, GIS</p>
+              <p><strong>B.Sc.</strong> Energy, Climate, Sustainability &amp; Environmental Science<br>Amsterdam University College, The Netherlands · Minor in Agroecology, GIS</p>
+              <p><strong>Study abroad</strong> — Ecotoxicology &amp; Marine Ecology<br>University of Queensland, Australia · Heron Island &amp; Moreton Bay</p>
             </div>
-            <div>
-              <div class="sidebar-box">
-                <h3>Fieldwork snapshots</h3>
-                <ul>
-                  <li><span class="dot dot-1"></span> Dayton Valley Aquaponics · Nevada — tomato nutrient cycling</li>
-                  <li><span class="dot dot-2"></span> Heron Island Research Station · Great Barrier Reef — coral mucus defenses</li>
-                  <li><span class="dot dot-3"></span> Moreton Bay Research Station · Queensland — herbicide concentrations in coastal waterbodies</li>
-                </ul>
-              </div>
+            <div class="sidebar-box">
+              <h3>Fieldwork snapshots</h3>
+              <ul>
+                <li><span class="dot dot-1"></span> Dayton Valley Aquaponics · Nevada — tomato nutrient cycling</li>
+                <li><span class="dot dot-2"></span> Heron Island Research Station · Great Barrier Reef — coral mucus defenses</li>
+                <li><span class="dot dot-3"></span> Moreton Bay Research Station · Queensland — herbicide concentrations in coastal waterbodies</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -228,8 +252,8 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner">
-        <p>© 2026 · Mona Farnisa</p>
+      <div class="container">
+        <p>© 2026 · Mona Farnisa · Geospatial Data Scientist</p>
         <p>Built for geospatial &amp; visualization work — view my main site at <a href="https://monafarnisa.github.io/">monafarnisa.github.io</a>.</p>
       </div>
     </footer>
@@ -242,18 +266,18 @@
           if (href === '#') return;
           e.preventDefault();
           var target = document.querySelector(href);
-          if (target) target.scrollIntoView({ behavior: 'smooth' });
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       });
 
-      // Optional: highlight current section in sidebar
+      // Highlight current section in navbar
       (function() {
-        var navLinks = document.querySelectorAll('.nav a');
+        var navLinks = document.querySelectorAll('.navbar-nav a');
         var sections = document.querySelectorAll('.section[id]');
         function onScroll() {
           var current = '';
           sections.forEach(function(section) {
-            if (window.scrollY >= section.offsetTop - 120) current = section.getAttribute('id');
+            if (window.scrollY >= section.offsetTop - 150) current = section.getAttribute('id');
           });
           navLinks.forEach(function(a) {
             a.classList.remove('active');

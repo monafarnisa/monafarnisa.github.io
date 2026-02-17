@@ -1,19 +1,35 @@
-/* Pastel aesthetics – inspired by carlobroderick.github.io/pastel */
+/* Pastel aesthetic – inspired by carlobroderick.github.io/pastel */
+/* Light blue and orange themes for geospatial data science */
 
 :root {
-  --bg: #fef6f0;
+  --bg: #f8fcff;
+  --bg-warm: #fffaf5;
   --bg-card: #ffffff;
-  --text: #4a4a4a;
-  --text-soft: #7a7a7a;
-  --text-muted: #a0a0a0;
-  --border: #f0e6df;
-  --lavender: #c4b5fd;
+  --text: #2d3748;
+  --text-soft: #5a6a7a;
+  --text-muted: #8a9aab;
+  --border: #e2eef7;
+
+  /* Light blue palette */
+  --sky-light: #e0f4ff;
+  --sky: #7dd3fc;
+  --sky-deep: #0ea5e9;
+  --blue-pale: #dbeafe;
+  --blue: #60a5fa;
+
+  /* Orange palette */
+  --orange-pale: #ffedd5;
+  --orange-light: #fed7aa;
+  --orange: #fb923c;
+  --orange-deep: #ea580c;
+
+  /* Accents & pastels */
   --mint: #a7f3d0;
-  --peach: #fcd5ce;
-  --sky: #bae6fd;
-  --rose: #fecdd3;
-  --butter: #fef08a;
-  --accent: #a78bfa;
+  --peach: #fed7aa;
+  --lavender: #c4b5fd;
+
+  --accent: var(--sky-deep);
+  --accent-secondary: var(--orange);
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif: 'Fraunces', Georgia, serif;
   --max-width: 880px;
@@ -40,7 +56,7 @@ body {
 }
 
 ::selection {
-  background: var(--lavender);
+  background: var(--sky-light);
   color: var(--text);
 }
 
@@ -53,91 +69,63 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Soft blobs in background */
-.blobs {
+/* ========== TOP NAVBAR ========== */
+.navbar {
   position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.blobs::before {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(196, 181, 253, 0.2) 0%, transparent 70%);
-  top: -10%;
-  right: -5%;
-  border-radius: 50%;
-}
-
-.blobs::after {
-  content: '';
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(167, 243, 208, 0.2) 0%, transparent 70%);
-  bottom: 10%;
-  left: -10%;
-  border-radius: 50%;
-}
-
-/* ========== SIDEBAR ========== */
-.site-sidebar {
-  position: fixed;
-  left: 0;
   top: 0;
-  bottom: 0;
-  width: 200px;
-  padding: 1.75rem 1rem 1.5rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  background: rgba(254, 246, 240, 0.95);
-  border-right: 1px solid var(--border);
-  z-index: 50;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 2rem;
+  background: rgba(248, 252, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
 
-.logo {
+.navbar-logo {
   font-family: var(--font-serif);
-  font-size: 1.1rem;
-  color: var(--accent);
+  font-size: 1.15rem;
   font-weight: 600;
-  display: inline-block;
+  color: var(--accent);
 }
 
-.nav {
+.navbar-logo:hover {
+  text-decoration: none;
+  color: var(--accent-secondary);
+}
+
+.navbar-nav {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
   font-size: 0.9rem;
 }
 
-.nav a {
+.navbar-nav a {
   color: var(--text-soft);
-  padding: 0.5rem 0.75rem;
-  border-radius: 10px;
-  transition: color 0.2s, background 0.2s, transform 0.2s;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
   font-weight: 500;
 }
 
-.nav a:hover,
-.nav a.active {
+.navbar-nav a:hover,
+.navbar-nav a.active {
   color: var(--accent);
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--sky-light);
   text-decoration: none;
 }
 
-.nav a.active {
-  transform: translateX(4px);
+.navbar-nav a.active {
+  color: var(--accent);
 }
 
 /* ========== MAIN ========== */
 .main-content {
-  margin-left: 200px;
-  min-width: 0;
+  padding-top: 64px;
   position: relative;
   z-index: 1;
 }
@@ -148,57 +136,54 @@ a:hover {
   padding: 0 2rem;
 }
 
-/* ========== INTRO / HERO ========== */
-.section.intro {
-  min-height: 100vh;
+/* ========== HERO ========== */
+.section.hero {
+  min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
-  padding: 6rem 2rem 5rem;
+  padding: 4rem 0 5rem;
 }
 
-.intro-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  width: 100%;
-  text-align: left;
-}
-
-.intro-label {
+.hero-label {
   font-size: 0.9rem;
   color: var(--accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.eyebrow {
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
+.hero-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
 }
 
 .hero-headshot {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.12);
+  flex-shrink: 0;
 }
 
-.intro-inner h1 {
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
   font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
   color: var(--text);
 }
 
-.intro-blurb {
+.hero-blurb {
   font-size: 1.05rem;
   color: var(--text-soft);
   line-height: 1.8;
@@ -206,16 +191,11 @@ a:hover {
   max-width: 560px;
 }
 
-.intro-blurb a {
-  color: var(--accent);
-  border-bottom: 1px dotted var(--accent);
-}
-
-.intro-tags {
+.hero-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .tag {
@@ -225,45 +205,45 @@ a:hover {
   font-weight: 500;
 }
 
-.tag-1 { background: var(--peach); color: #b45309; }
-.tag-2 { background: var(--mint); color: #047857; }
-.tag-3 { background: var(--lavender); color: #6d28d9; }
-.tag-4 { background: var(--sky); color: #0369a1; }
-.tag-5 { background: var(--butter); color: #a16207; }
+.tag-python { background: var(--sky-light); color: var(--sky-deep); }
+.tag-r { background: var(--blue-pale); color: #2563eb; }
+.tag-arcgis { background: var(--orange-pale); color: var(--orange-deep); }
+.tag-cartography { background: var(--mint); color: #047857; }
+.tag-spatial { background: var(--peach); color: #c2410c; }
 
-.intro-links {
+.hero-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
 }
 
-.intro-links a {
+.hero-links a {
   font-size: 0.95rem;
   color: var(--text-soft);
   font-weight: 500;
   transition: color 0.2s;
 }
 
-.intro-links a:hover {
+.hero-links a:hover {
   color: var(--accent);
 }
 
-.intro-links a:first-child {
+.hero-links a:first-child {
   color: var(--accent);
 }
 
 /* ========== SECTIONS ========== */
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
   position: relative;
 }
 
 .section h2 {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: var(--text);
 }
 
@@ -283,11 +263,16 @@ a:hover {
   max-width: 640px;
 }
 
-/* ========== TOOLBOX GRID (Skills) ========== */
+.section p {
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+
+/* ========== TOOLBOX GRID ========== */
 .toolbox-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
 }
 
 .tool-group {
@@ -295,13 +280,13 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.04);
 }
 
 .tool-group h3 {
   font-size: 0.8rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
@@ -317,25 +302,25 @@ a:hover {
   padding: 0.3rem 0;
 }
 
-/* ========== PROJECTS ========== */
+/* ========== PROJECT CARDS ========== */
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.project {
+.project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.75rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.08);
 }
 
 .project-header {
@@ -346,7 +331,7 @@ a:hover {
 }
 
 .project-emoji {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .project-cats {
@@ -356,7 +341,7 @@ a:hover {
   letter-spacing: 0.05em;
 }
 
-.project h3 {
+.project-card h3 {
   font-family: var(--font-serif);
   font-size: 1.2rem;
   font-weight: 600;
@@ -364,7 +349,7 @@ a:hover {
   color: var(--text);
 }
 
-.project p {
+.project-card p {
   color: var(--text-soft);
   font-size: 0.95rem;
   line-height: 1.7;
@@ -380,8 +365,8 @@ a:hover {
 
 .project-tools code {
   font-size: 0.75rem;
-  background: var(--bg);
-  color: var(--text-soft);
+  background: var(--sky-light);
+  color: var(--sky-deep);
   padding: 0.25rem 0.6rem;
   border-radius: 6px;
   font-family: var(--font-main);
@@ -395,6 +380,7 @@ a:hover {
 
 .project-link:hover {
   text-decoration: underline;
+  color: var(--accent-secondary);
 }
 
 .muted {
@@ -403,14 +389,55 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* ========== VIZ ========== */
+/* ========== PROJECTS & CODE (Coming Soon) ========== */
+.projects-coming {
+  background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%);
+}
+
+.coming-soon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.coming-card {
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.coming-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.coming-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.coming-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ========== VISUALIZATIONS ========== */
 .sidebar-box {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .sidebar-box h3 {
@@ -450,8 +477,7 @@ a:hover {
 
 .dot-1 { background: var(--mint); }
 .dot-2 { background: var(--sky); }
-.dot-3 { background: var(--butter); }
-.dot-4 { background: var(--rose); }
+.dot-3 { background: var(--orange-light); }
 
 .code-callout-label {
   font-size: 0.75rem;
@@ -469,7 +495,7 @@ a:hover {
   display: block;
   width: 100%;
   border-radius: 14px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 32px rgba(14, 165, 233, 0.1);
 }
 
 .viz-figure figcaption {
@@ -485,7 +511,7 @@ a:hover {
   border-radius: 14px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .pub-status {
@@ -506,42 +532,34 @@ a:hover {
 /* ========== ABOUT GRID (Education) ========== */
 .about-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 3rem;
-}
-
-.about-text p {
-  color: var(--text-soft);
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 0.75rem;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
 }
 
 /* ========== FOOTER ========== */
 .site-footer {
-  margin-left: 200px;
   padding: 2.5rem 2rem;
-  position: relative;
-  z-index: 1;
+  border-top: 1px solid var(--border);
+  background: var(--bg-warm);
 }
 
-.footer-inner p {
+.site-footer .container p {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 0.25rem;
 }
 
-.footer-inner a {
+.site-footer a {
   color: var(--accent);
 }
 
-/* ========== BLOB WRAPPER (add to body in HTML or keep background on body) ========== */
+/* Soft background blobs - light blue & orange */
 body::before {
   content: '';
   position: fixed;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(196, 181, 253, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.2) 0%, transparent 70%);
   top: -10%;
   right: -5%;
   border-radius: 50%;
@@ -552,10 +570,10 @@ body::before {
 body::after {
   content: '';
   position: fixed;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(167, 243, 208, 0.15) 0%, transparent 70%);
-  bottom: 10%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(253, 186, 116, 0.15) 0%, transparent 70%);
+  bottom: 5%;
   left: -10%;
   border-radius: 50%;
   pointer-events: none;
@@ -564,48 +582,55 @@ body::after {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
-  .site-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  .navbar {
+    flex-direction: column;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
   }
 
-  .site-sidebar .nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.35rem;
+  .navbar-nav {
+    justify-content: center;
   }
 
   .main-content {
-    margin-left: 0;
-    margin-top: 56px;
+    padding-top: 100px;
   }
 
-  .section.intro {
+  .section.hero {
     min-height: auto;
-    padding: 4rem 2rem 3rem;
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-blurb {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-tags,
+  .hero-links {
+    justify-content: center;
   }
 
   .toolbox-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-grid {
+  .coming-soon-grid {
     grid-template-columns: 1fr;
   }
 
-  .site-footer {
-    margin-left: 0;
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -614,12 +639,11 @@ body::after {
     padding: 0 1.25rem;
   }
 
-  .intro-inner h1 {
-    font-size: 1.75rem;
+  .hero-text h1 {
+    font-size: 1.6rem;
   }
 
-  .intro-links {
+  .hero-links {
     flex-direction: column;
-    align-items: flex-start;
   }
 }
