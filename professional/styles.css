@@ -35,6 +35,39 @@ body {
   background: radial-gradient(circle at top left, #ffe6f0, transparent 55%),
     radial-gradient(circle at top right, #e5e9ff, transparent 55%),
     radial-gradient(circle at bottom, #f7f5ff, #f7f5ff 55%, #f2f0ff 100%);
+  display: flex;
+}
+
+/* Sidebar navigation */
+.site-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  padding: 1.75rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  backdrop-filter: blur(18px);
+  background: linear-gradient(
+    to right,
+    rgba(248, 245, 255, 0.92),
+    rgba(248, 245, 255, 0.7),
+    transparent
+  );
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 20;
+}
+
+.site-sidebar .logo {
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 200px;
+  min-width: 0;
 }
 
 a {
@@ -53,25 +86,8 @@ a:hover {
   padding: 0 1.5rem;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  backdrop-filter: blur(18px);
-  background: linear-gradient(
-    to bottom,
-    rgba(248, 245, 255, 0.9),
-    rgba(248, 245, 255, 0.7),
-    transparent
-  );
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.9rem 0.25rem;
+.container-narrow {
+  max-width: 680px;
 }
 
 .logo {
@@ -85,17 +101,19 @@ a:hover {
   border: 1px solid rgba(37, 35, 58, 0.12);
   background: rgba(255, 255, 255, 0.9);
   color: var(--text);
+  display: inline-block;
 }
 
 .nav {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.25rem;
   font-size: 0.85rem;
 }
 
 .nav a {
-  padding: 0.4rem 0.75rem;
-  border-radius: 999px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
   color: var(--text-muted);
 }
 
@@ -140,6 +158,30 @@ main {
 .section-header p {
   margin: 0;
   color: var(--text-muted);
+}
+
+/* Centered research / highlight sections */
+.section-centered .container,
+.section-centered .container-narrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-header-centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-centered .section-header-centered {
+  max-width: 560px;
+}
+
+.section-centered .pub-list {
+  width: 100%;
+  text-align: left;
 }
 
 .hero {
@@ -387,6 +429,25 @@ main {
   align-items: flex-start;
 }
 
+.viz-layout-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.viz-layout-centered .section-header-centered p {
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.viz-figure-centered {
+  width: 100%;
+}
+
 .viz-text p {
   color: var(--text-muted);
 }
@@ -432,6 +493,11 @@ main {
   margin-top: 0.6rem;
   font-size: 0.78rem;
   color: #d0c6ff;
+}
+
+.section-centered .viz-figure figcaption {
+  color: rgba(37, 35, 58, 0.75);
+  text-align: center;
 }
 
 .pub-list {
@@ -507,6 +573,7 @@ main {
 }
 
 .site-footer {
+  margin-left: 200px;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
   padding: 1.6rem 0 1.9rem;
   background: rgba(250, 248, 255, 0.88);
@@ -529,6 +596,37 @@ main {
 /* Responsive */
 
 @media (max-width: 860px) {
+  .site-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .site-sidebar .nav {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 56px;
+  }
+
+  .site-footer {
+    margin-left: 0;
+  }
+
   .hero-grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -539,10 +637,6 @@ main {
 
   .hero-card {
     order: -1;
-  }
-
-  .nav {
-    display: none;
   }
 }
 
@@ -555,12 +649,16 @@ main {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .viz-layout-centered {
+    padding: 0 0.5rem;
+  }
+
   .edu-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .hero {
-    padding-top: 3.8rem;
+    padding-top: 2rem;
   }
 }
 
