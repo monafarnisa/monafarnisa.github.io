@@ -161,8 +161,8 @@ a:hover {
 }
 
 .hero-headshot {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 8px 24px rgba(14, 165, 233, 0.12);
@@ -334,6 +334,12 @@ a:hover {
   font-size: 1.6rem;
 }
 
+.project-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 .project-cats {
   font-size: 0.8rem;
   color: var(--text-muted);
@@ -372,6 +378,12 @@ a:hover {
   font-family: var(--font-main);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .project-link {
   font-size: 0.9rem;
   color: var(--accent);
@@ -381,6 +393,14 @@ a:hover {
 .project-link:hover {
   text-decoration: underline;
   color: var(--accent-secondary);
+}
+
+.research-fieldwork p {
+  margin-bottom: 1rem;
+}
+
+.research-fieldwork p:last-child {
+  margin-bottom: 0;
 }
 
 .muted {
