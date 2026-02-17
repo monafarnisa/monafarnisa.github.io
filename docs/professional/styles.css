@@ -78,7 +78,7 @@ a:hover {
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0.9rem 2rem;
   background: rgba(248, 252, 255, 0.92);
   backdrop-filter: blur(12px);
@@ -95,6 +95,10 @@ a:hover {
 .navbar-logo:hover {
   text-decoration: none;
   color: var(--accent-secondary);
+}
+
+.navbar-logo {
+  margin-right: auto;
 }
 
 .navbar-nav {
@@ -335,7 +339,7 @@ a:hover {
 }
 
 .project-logo {
-  height: 48px;
+  height: 24px;
   width: auto;
   display: block;
 }
