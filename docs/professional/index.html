@@ -8,11 +8,12 @@
       name="description"
       content="Portfolio of Mona Farnisa, a geospatial data scientist focused on data visualization, cartography, and spatial analytics in Python, R, and ArcGIS."
     />
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -31,125 +32,124 @@
 
     <main id="top" class="main-content">
       <!-- Hero / About -->
-      <section id="about" class="section bg-sage">
-        <div class="section-inner">
+      <section id="about" class="section intro">
+        <div class="section-inner intro-inner">
           <img
             src="../images/surf_headshot.JPG"
             alt="Mona Farnisa"
             class="hero-headshot"
           />
+          <p class="intro-label">Hello there</p>
           <p class="eyebrow">Geospatial Data Scientist</p>
           <h1>Maps, models, and stories about changing landscapes.</h1>
-          <p class="lead">
+          <p class="intro-blurb">
             I work at the intersection of geospatial analysis, data visualization, and
             environmental science—building maps and tools that translate complex
-            datasets into clear, actionable insights.
+            datasets into clear, actionable insights. I'm focused on wildfire resilience,
+            cultural heritage, and climate impacts.
           </p>
-          <p>
-            I'm focused on wildfire resilience, cultural heritage, and climate impacts—
-            building static and interactive maps from hundreds of social and ecological
-            data layers, and always looking for new ways to make spatial data intuitive
-            and beautiful.
-          </p>
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>R</span>
-            <span>ArcGIS</span>
-            <span>Cartography</span>
-            <span>Spatial statistics</span>
+          <div class="intro-tags">
+            <span class="tag tag-1">Python</span>
+            <span class="tag tag-2">R</span>
+            <span class="tag tag-3">ArcGIS</span>
+            <span class="tag tag-4">Cartography</span>
+            <span class="tag tag-5">Spatial statistics</span>
           </div>
-          <div class="hero-links">
-            <a class="button primary" href="#viz">View visualizations</a>
-            <a class="button ghost" href="https://github.com/monafarnisa" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button ghost" href="mailto:farnisamona@gmail.com">Email</a>
+          <div class="intro-links">
+            <a href="#work">View my work ↓</a>
+            <a href="https://github.com/monafarnisa" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:farnisamona@gmail.com">Email</a>
           </div>
-        </div>
-        <div class="wave-divider">
-          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="#c5d4e8"/>
-          </svg>
         </div>
       </section>
 
       <!-- Skills -->
-      <section id="skills" class="section bg-blue">
-        <div class="section-inner">
-          <h2>What I work with</h2>
-          <p>
-            Combining environmental science training with geospatial engineering to
-            build reproducible, transparent analyses.
-          </p>
-          <p>
-            <strong>Geospatial &amp; cartography</strong> — Design maps that balance scientific accuracy with clear storytelling: raster &amp; vector processing, projections, static &amp; interactive mapping.
-          </p>
-          <p>
-            <strong>Analytics &amp; modeling</strong> — Build deterministic and index-based models that integrate social, ecological, and infrastructure data: spatial statistics, exposure &amp; vulnerability indices, reproducible workflows.
-          </p>
-          <p>
-            <strong>Tools</strong> — Python, R, ArcGIS, QGIS, GeoPandas, sf, Rasterio, terra, Git &amp; GitHub.
-          </p>
-        </div>
-        <div class="wave-divider">
-          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path d="M0,40 C240,100 480,10 720,60 C960,110 1200,20 1440,50 L1440,120 L0,120 Z" fill="#e8b4bc"/>
-          </svg>
+      <section id="skills" class="section">
+        <div class="container">
+          <h2><span class="section-num">01</span> What I work with</h2>
+          <p class="section-blurb">Combining environmental science training with geospatial engineering to build reproducible, transparent analyses.</p>
+          <div class="toolbox-grid">
+            <div class="tool-group">
+              <h3>Geospatial</h3>
+              <ul>
+                <li>Raster &amp; vector processing</li>
+                <li>Projections &amp; map design</li>
+                <li>Static &amp; interactive mapping</li>
+              </ul>
+            </div>
+            <div class="tool-group">
+              <h3>Analytics &amp; modeling</h3>
+              <ul>
+                <li>Spatial statistics &amp; aggregation</li>
+                <li>Exposure &amp; vulnerability indices</li>
+                <li>Reproducible workflows</li>
+              </ul>
+            </div>
+            <div class="tool-group">
+              <h3>Tools</h3>
+              <ul>
+                <li>Python, R</li>
+                <li>ArcGIS, QGIS, GeoPandas, sf</li>
+                <li>Rasterio, terra, Git &amp; GitHub</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="work" class="section bg-coral">
-        <div class="section-inner">
-          <h2>Selected projects</h2>
-          <p>
-            A few examples of how I use spatial data, visualization, and modeling to
-            answer environmental questions.
-          </p>
+      <section id="work" class="section">
+        <div class="container">
+          <h2><span class="section-num">02</span> Selected projects</h2>
+          <p class="section-blurb">A few examples of how I use spatial data, visualization, and modeling to answer environmental questions.</p>
 
-          <div class="block">
-            <p class="tag">Wildfire · Geospatial index</p>
-            <h3>Wildfire Resilience Index</h3>
-            <p>
-              As a geospatial analyst at the National Center for Ecological Analysis and
-              Synthesis, I worked on a nationwide index integrating nearly 100 layers
-              across infrastructure, health, vegetation, species, air, water, and
-              cultural heritage. Python, R, QGIS · spatial aggregation &amp; weighting, index design &amp; visualization.
-            </p>
-            <a href="https://wildfireindex.org/" class="button ghost" target="_blank" rel="noreferrer">View the Wildfire Resilience Index</a>
-          </div>
+          <div class="project-list">
+            <article class="project">
+              <div class="project-header">
+                <span class="project-emoji">🔥</span>
+                <span class="project-cats">Wildfire · Geospatial index</span>
+              </div>
+              <h3>Wildfire Resilience Index</h3>
+              <p>As a geospatial analyst at NCEAS, I worked on a nationwide index integrating nearly 100 layers across infrastructure, health, vegetation, species, air, water, and cultural heritage.</p>
+              <div class="project-tools">
+                <code>Python</code><code>R</code><code>QGIS</code><code>GeoPandas</code><code>Spatial aggregation</code>
+              </div>
+              <a href="https://wildfireindex.org/" class="project-link" target="_blank" rel="noreferrer">View the Wildfire Resilience Index →</a>
+            </article>
 
-          <div class="block">
-            <p class="tag">Agriculture · Field experiment</p>
-            <h3>Floral hemp nitrogen responses</h3>
-            <p>
-              Field-based analysis of floral hemp responses to nitrogen fertilization in
-              the high desert, combining yield analytics, spatial context, and
-              fertilization tracking. Experimental design, mixed data &amp; spatial analysis, visualization for publications.
-            </p>
-            <a href="https://doi.org/10.1371/journal.pone.0284537" class="button ghost" target="_blank" rel="noreferrer">Read the publication</a>
-          </div>
+            <article class="project">
+              <div class="project-header">
+                <span class="project-emoji">🌾</span>
+                <span class="project-cats">Agriculture · Field experiment</span>
+              </div>
+              <h3>Floral hemp nitrogen responses</h3>
+              <p>Field-based analysis of floral hemp responses to nitrogen fertilization in the high desert, combining yield analytics, spatial context, and fertilization tracking.</p>
+              <div class="project-tools">
+                <code>Experimental design</code><code>Mixed data</code><code>Spatial analysis</code><code>Visualization</code>
+              </div>
+              <a href="https://doi.org/10.1371/journal.pone.0284537" class="project-link" target="_blank" rel="noreferrer">Read the publication →</a>
+            </article>
 
-          <div class="block">
-            <p class="tag">Climate · Cultural heritage</p>
-            <h3>Cultural heritage &amp; wildfire exposure</h3>
-            <p>
-              Nationwide assessment of how cultural heritage sites in the United States
-              intersect with wildfire risk, combining heritage inventories with hazard
-              and exposure modeling. Spatial joins &amp; overlays, risk &amp; exposure metrics, cartographic storytelling.
-            </p>
-            <p class="note"><em>In review at Scientific Reports.</em></p>
+            <article class="project">
+              <div class="project-header">
+                <span class="project-emoji">🏛️</span>
+                <span class="project-cats">Climate · Cultural heritage</span>
+              </div>
+              <h3>Cultural heritage &amp; wildfire exposure</h3>
+              <p>Nationwide assessment of how cultural heritage sites in the United States intersect with wildfire risk, combining heritage inventories with hazard and exposure modeling.</p>
+              <div class="project-tools">
+                <code>Spatial joins</code><code>Risk &amp; exposure</code><code>Cartography</code>
+              </div>
+              <p class="muted"><em>In review at Scientific Reports.</em></p>
+            </article>
           </div>
-        </div>
-        <div class="wave-divider">
-          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path d="M0,80 C360,20 720,100 1080,40 C1260,10 1380,30 1440,60 L1440,120 L0,120 Z" fill="#c5d4e8"/>
-          </svg>
         </div>
       </section>
 
       <!-- Visualizations -->
-      <section id="viz" class="section bg-blue">
-        <div class="section-inner">
-          <h2>Visualizations &amp; cartography</h2>
+      <section id="viz" class="section">
+        <div class="container">
+          <h2><span class="section-num">03</span> Visualizations &amp; cartography</h2>
           <p>
             I love building maps that surface both vulnerability and resilience—often
             by combining demographic, infrastructural, and environmental datasets into
@@ -160,9 +160,9 @@
             into a paired visualization of vulnerability and access to care. I will
             add a detailed, reproducible code walkthrough here using Python and R.
           </p>
-          <div class="code-callout">
+          <div class="sidebar-box">
             <p class="code-callout-label">Coming soon</p>
-            <p>This section will include the full code and narrative behind this map: data preparation and spatial joins, color choices and bivariate mapping approach, export settings for publication-quality figures.</p>
+            <p>Full code and narrative: data preparation and spatial joins, color choices and bivariate mapping, export settings for publication-quality figures.</p>
           </div>
           <figure class="viz-figure">
             <img
@@ -170,24 +170,17 @@
               alt="Bivariate map showing occupational vulnerability to poor air quality and access to medical care across the western United States."
             />
             <figcaption>
-              Percent of the population more vulnerable to poor air quality due to
-              occupation (left) and estimated access to medical care (right). Code and
-              documentation coming soon.
+              Percent of the population more vulnerable to poor air quality due to occupation (left) and estimated access to medical care (right).
             </figcaption>
           </figure>
-        </div>
-        <div class="wave-divider">
-          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path d="M0,50 C480,110 960,10 1440,70 L1440,120 L0,120 Z" fill="#e8b4bc"/>
-          </svg>
         </div>
       </section>
 
       <!-- Publications -->
-      <section id="publications" class="section bg-coral">
-        <div class="section-inner">
-          <h2>Publications</h2>
-          <p>Work at the intersection of wildfire, agriculture, and spatial analysis.</p>
+      <section id="publications" class="section">
+        <div class="container">
+          <h2><span class="section-num">04</span> Publications</h2>
+          <p class="section-blurb">Work at the intersection of wildfire, agriculture, and spatial analysis.</p>
 
           <div class="pub-item">
             <p class="pub-status">In review</p>
@@ -202,39 +195,34 @@
             <p><strong>Farnisa MM</strong>, Miller GC, Solomon JKQ, Barrios-Masias FH (2023). Floral hemp (<em>Cannabis sativa</em> L.) responses to nitrogen fertilization under field conditions in the high desert. <em>PLOS ONE</em>, 18(5): e0284537. <a href="https://doi.org/10.1371/journal.pone.0284537" target="_blank" rel="noreferrer">DOI link</a>.</p>
           </div>
         </div>
-        <div class="wave-divider">
-          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-            <path d="M0,60 C240,10 480,100 720,50 C960,0 1200,80 1440,40 L1440,120 L0,120 Z" fill="#c5d4e8"/>
-          </svg>
-        </div>
       </section>
 
       <!-- Education -->
-      <section id="education" class="section bg-blue">
-        <div class="section-inner">
-          <h2>Education</h2>
-          <p>Training across environmental science, data analysis, and sustainability.</p>
+      <section id="education" class="section">
+        <div class="container">
+          <h2><span class="section-num">05</span> Education</h2>
+          <p class="section-blurb">Training across environmental science, data analysis, and sustainability.</p>
 
-          <div class="block">
-            <h3>M.Sc. Natural Resources, Ecology &amp; Environmental Science</h3>
-            <p>University of Nevada, Reno · Minor in Data Analysis, Statistics, GIS</p>
+          <div class="about-grid">
+            <div class="about-text">
+              <div class="sidebar-box">
+                <h3>Education</h3>
+                <p><strong>M.Sc.</strong> Natural Resources, Ecology &amp; Environmental Science<br>University of Nevada, Reno · Minor in Data Analysis, Statistics, GIS</p>
+                <p><strong>B.Sc.</strong> Energy, Climate, Sustainability &amp; Environmental Science<br>Amsterdam University College, The Netherlands · Minor in Agroecology, GIS</p>
+                <p><strong>Study abroad</strong> — Ecotoxicology &amp; Marine Ecology<br>University of Queensland, Australia · Heron Island &amp; Moreton Bay</p>
+              </div>
+            </div>
+            <div>
+              <div class="sidebar-box">
+                <h3>Fieldwork snapshots</h3>
+                <ul>
+                  <li><span class="dot dot-1"></span> Dayton Valley Aquaponics · Nevada — tomato nutrient cycling</li>
+                  <li><span class="dot dot-2"></span> Heron Island Research Station · Great Barrier Reef — coral mucus defenses</li>
+                  <li><span class="dot dot-3"></span> Moreton Bay Research Station · Queensland — herbicide concentrations in coastal waterbodies</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="block">
-            <h3>B.Sc. Energy, Climate, Sustainability &amp; Environmental Science</h3>
-            <p>Amsterdam University College, The Netherlands · Minor in Agroecology, GIS</p>
-          </div>
-          <div class="block">
-            <h3>Study abroad — Ecotoxicology &amp; Marine Ecology</h3>
-            <p>University of Queensland, Australia · Heron Island &amp; Moreton Bay research stations</p>
-          </div>
-
-          <h3>Fieldwork snapshots</h3>
-          <p>From greenhouse trials to coastal field stations, I ground my analyses in on-the-ground experience.</p>
-          <ul class="field-list">
-            <li>Dayton Valley Aquaponics · Nevada, USA — tomato nutrient cycling.</li>
-            <li>Heron Island Research Station · Great Barrier Reef — coral mucus defenses against marine and human bacteria.</li>
-            <li>Moreton Bay Research Station · Queensland, Australia — herbicide concentrations in coastal waterbodies.</li>
-          </ul>
         </div>
       </section>
     </main>
