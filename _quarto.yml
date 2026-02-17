@@ -1,8 +1,7 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - professional/**
+  # professional site lives in docs/professional/ — edit there directly so it isn’t overwritten by render
 
 website:
   title: "Mona Farnisa"
