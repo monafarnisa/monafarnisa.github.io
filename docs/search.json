@@ -26,5 +26,89 @@
     "title": "Education",
     "section": "",
     "text": "Education\n\nM.Sc. in Natural Resources, Ecology & Environmental Science\nMinor: Data Analysis, Statistics, GIS\nUniversity of Nevada, Reno | May 2020 - December 2022\n\nB.Sc. in Energy, Climate, Sustainability & Environmental Science\nMinor: Agroecology, GIS\nAmsterdam University College, The Netherlands | August 2014 - June 2017\n\nStudy Semester Abroad\nTrack: Ecotoxicology, Marine Ecology\nUniversity of Queensland, Australia | June - December 2016\n\n\n\nResearch\n\nDayton Valley Aquaponics | Nevada, USA | 2018\nBrix concentrations of greenhouse tomato varieties on varying nutrient cycles.\n\nHeron Island Research Station | Queensland, Australia | 2016\nDefense properties of coral mucus in the Great Barrier Reef against marine and human bacteria.\n\nMoreton Bay Research Station | Stradbroke Island, Queensland, Australia | 2016\nDetermining PSII herbicide concentrations of five waterbodies in Queensland, Australia using combined chemical and bioassay analysis approach."
+  },
+  {
+    "objectID": "pictures.html",
+    "href": "pictures.html",
+    "title": "Pictures",
+    "section": "",
+    "text": "A collection of photos from fieldwork, research, and travel. You can replace this page with a gallery or link to an external album.\n\n\nFieldwork — Research and data collection in the field.\n\n\nPlaces — Labs, stations, and sites.\n\n\nTo turn this into a real gallery, add images under images/ and reference them here, or use a Quarto listing/grid of image files."
+  },
+  {
+    "objectID": "projects/wildfire-resilience-index.html",
+    "href": "projects/wildfire-resilience-index.html",
+    "title": "Wildfire Resilience Index",
+    "section": "",
+    "text": "At the National Center for Ecological Analysis and Synthesis, I worked as a geospatial analyst on the Wildfire Resilience Index, integrating nearly 100 geospatial data layers across multiple domains."
+  },
+  {
+    "objectID": "projects/wildfire-resilience-index.html#overview",
+    "href": "projects/wildfire-resilience-index.html#overview",
+    "title": "Wildfire Resilience Index",
+    "section": "",
+    "text": "At the National Center for Ecological Analysis and Synthesis, I worked as a geospatial analyst on the Wildfire Resilience Index, integrating nearly 100 geospatial data layers across multiple domains."
+  },
+  {
+    "objectID": "projects/wildfire-resilience-index.html#domains",
+    "href": "projects/wildfire-resilience-index.html#domains",
+    "title": "Wildfire Resilience Index",
+    "section": "Domains",
+    "text": "Domains\n\nInfrastructure — exposure and capacity\nHealth — population and vulnerability\nVegetation & species — fuels and biodiversity\nAir & water — quality and availability\nCultural heritage — nationwide exposure (see Publications)"
+  },
+  {
+    "objectID": "projects/wildfire-resilience-index.html#tools-methods",
+    "href": "projects/wildfire-resilience-index.html#tools-methods",
+    "title": "Wildfire Resilience Index",
+    "section": "Tools & methods",
+    "text": "Tools & methods\n\nR, Python, QGIS\nSpatial aggregation and weighting\nDeterministic and index-based modeling"
+  },
+  {
+    "objectID": "projects/wildfire-resilience-index.html#links",
+    "href": "projects/wildfire-resilience-index.html#links",
+    "title": "Wildfire Resilience Index",
+    "section": "Links",
+    "text": "Links\n\nWildfire Resilience Index\nRelated publication: Nationwide exposure of United States cultural heritage to wildfire (In Review at Scientific Reports)"
+  },
+  {
+    "objectID": "projects/floral-hemp-nitrogen.html",
+    "href": "projects/floral-hemp-nitrogen.html",
+    "title": "Floral Hemp Nitrogen Fertilization",
+    "section": "",
+    "text": "My research in The Sustainable Horticulture Lab at the University of Nevada, Reno focused on plant–environment interactions and fertilization effects on floral hemp under field conditions in the high desert."
+  },
+  {
+    "objectID": "projects/floral-hemp-nitrogen.html#overview",
+    "href": "projects/floral-hemp-nitrogen.html#overview",
+    "title": "Floral Hemp Nitrogen Fertilization",
+    "section": "",
+    "text": "My research in The Sustainable Horticulture Lab at the University of Nevada, Reno focused on plant–environment interactions and fertilization effects on floral hemp under field conditions in the high desert."
+  },
+  {
+    "objectID": "projects/floral-hemp-nitrogen.html#methods",
+    "href": "projects/floral-hemp-nitrogen.html#methods",
+    "title": "Floral Hemp Nitrogen Fertilization",
+    "section": "Methods",
+    "text": "Methods\n\nField trials with varying nitrogen regimes\nYield and quality metrics\nStatistical modeling (R)"
+  },
+  {
+    "objectID": "projects/floral-hemp-nitrogen.html#publication",
+    "href": "projects/floral-hemp-nitrogen.html#publication",
+    "title": "Floral Hemp Nitrogen Fertilization",
+    "section": "Publication",
+    "text": "Publication\nFarnisa MM, Miller GC, Solomon JKQ, Barrios-Masias FH (2023) Floral hemp (Cannabis sativa L.) responses to nitrogen fertilization under field conditions in the high desert. PLOS ONE 18(5): e0284537. DOI: 10.1371/journal.pone.0284537"
+  },
+  {
+    "objectID": "projects/floral-hemp-nitrogen.html#code-data",
+    "href": "projects/floral-hemp-nitrogen.html#code-data",
+    "title": "Floral Hemp Nitrogen Fertilization",
+    "section": "Code & data",
+    "text": "Code & data\nAnalysis and figures were produced in R. Code and data can be shared on request or via the publication’s supplementary materials."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page showcases individual projects: data visualizations, spatial analyses, and code. Each post includes context, methods, and links to code or interactive dashboards where relevant.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nExample Project (static)\n\n\nTemplate for a project post: plain Markdown and optional static code snippets. No R or Python execution.\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nWildfire Resilience Index\n\n\nGeospatial analyst on a nationwide index integrating ~100 layers across social and ecological domains — infrastructure, health, vegetation, species, air, water, and cultural…\n\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nFloral Hemp Nitrogen Fertilization\n\n\nField study on nitrogen fertilization of floral hemp (Cannabis sativa L.) in the high desert — crop yield analytics and fertilization tracking.\n\n\n\nMay 1, 2023\n\n\n\n\n\n\nNo matching items"
   }
 ]

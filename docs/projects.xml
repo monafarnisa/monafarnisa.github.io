@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Mona Farnisa</title>
+<link>https://monafarnisa.github.io/projects.html</link>
+<atom:link href="https://monafarnisa.github.io/projects.xml" rel="self" type="application/rss+xml"/>
+<description>Geospatial data scientist &amp; analyst — visualizations, spatial statistics, and code.</description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Wed, 15 Jan 2025 08:00:00 GMT</lastBuildDate>
+<item>
+  <title></title>
+  <dc:creator>Mona Farnisa</dc:creator>
+  <link>https://monafarnisa.github.io/projects/template-with-code.html</link>
+  <description><![CDATA[ undefined ]]></description>
+  <category>template</category>
+  <guid>https://monafarnisa.github.io/projects/template-with-code.html</guid>
+  <pubDate>Wed, 15 Jan 2025 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Wildfire Resilience Index</title>
+  <dc:creator>Mona Farnisa</dc:creator>
+  <link>https://monafarnisa.github.io/projects/wildfire-resilience-index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>At the <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a>, I worked as a geospatial analyst on the <a href="https://wildfireindex.org/">Wildfire Resilience Index</a>, integrating nearly 100 geospatial data layers across multiple domains.</p>
+</section>
+<section id="domains" class="level2">
+<h2 class="anchored" data-anchor-id="domains">Domains</h2>
+<ul>
+<li><strong>Infrastructure</strong> — exposure and capacity</li>
+<li><strong>Health</strong> — population and vulnerability</li>
+<li><strong>Vegetation &amp; species</strong> — fuels and biodiversity</li>
+<li><strong>Air &amp; water</strong> — quality and availability</li>
+<li><strong>Cultural heritage</strong> — nationwide exposure (see Publications)</li>
+</ul>
+</section>
+<section id="tools-methods" class="level2">
+<h2 class="anchored" data-anchor-id="tools-methods">Tools &amp; methods</h2>
+<ul>
+<li>R, Python, QGIS</li>
+<li>Spatial aggregation and weighting</li>
+<li>Deterministic and index-based modeling</li>
+</ul>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<ul>
+<li><a href="https://wildfireindex.org/">Wildfire Resilience Index</a></li>
+<li>Related publication: <em>Nationwide exposure of United States cultural heritage to wildfire</em> (In Review at Scientific Reports)</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>geospatial</category>
+  <category>wildfire</category>
+  <category>NCEAS</category>
+  <guid>https://monafarnisa.github.io/projects/wildfire-resilience-index.html</guid>
+  <pubDate>Sat, 01 Jun 2024 07:00:00 GMT</pubDate>
+  <media:content url="https://monafarnisa.github.io/projects/images/hemp_field_crop.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Floral Hemp Nitrogen Fertilization</title>
+  <dc:creator>Mona Farnisa</dc:creator>
+  <link>https://monafarnisa.github.io/projects/floral-hemp-nitrogen.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>My research in <a href="https://naes.unr.edu/barrios/default.aspx">The Sustainable Horticulture Lab</a> at the University of Nevada, Reno focused on plant–environment interactions and fertilization effects on floral hemp under field conditions in the high desert.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<ul>
+<li>Field trials with varying nitrogen regimes</li>
+<li>Yield and quality metrics</li>
+<li>Statistical modeling (R)</li>
+</ul>
+</section>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<p>Farnisa MM, Miller GC, Solomon JKQ, Barrios-Masias FH (2023) <em>Floral hemp (Cannabis sativa L.) responses to nitrogen fertilization under field conditions in the high desert.</em> PLOS ONE 18(5): e0284537. <a href="https://doi.org/10.1371/journal.pone.0284537">DOI: 10.1371/journal.pone.0284537</a></p>
+</section>
+<section id="code-data" class="level2">
+<h2 class="anchored" data-anchor-id="code-data">Code &amp; data</h2>
+<p>Analysis and figures were produced in R. Code and data can be shared on request or via the publication’s supplementary materials.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>agriculture</category>
+  <category>R</category>
+  <category>statistics</category>
+  <guid>https://monafarnisa.github.io/projects/floral-hemp-nitrogen.html</guid>
+  <pubDate>Mon, 01 May 2023 07:00:00 GMT</pubDate>
+  <media:content url="https://monafarnisa.github.io/projects/images/hemp_field_crop.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
