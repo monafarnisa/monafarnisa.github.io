@@ -1,0 +1,9 @@
+# Python dependencies for Quarto .qmd execution and data science posts.
+# Install: pip install -r requirements.txt
+# Or use a venv: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+
+jupyter>=1.0.0
+ipykernel>=6.0.0
+pandas>=1.5.0
+matplotlib>=3.6.0
+numpy>=1.23.0

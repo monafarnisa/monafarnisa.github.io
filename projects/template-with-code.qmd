@@ -1,45 +1,37 @@
 ---
-title: "Example Project with Code"
-description: "Template for a data science post: embed a small visualization and code snippet to showcase your analysis workflow."
+title: "Example Project (static)"
+description: "Template for a project post: plain Markdown and optional static code snippets. No R or Python execution."
 author: "Mona Farnisa"
 date: "2025-01-15"
-categories: [template, R, visualization]
+categories: [template]
 draft: true
 ---
 
 ## How to add your own project
 
-1. Copy this file (or any project in `projects/`) and rename it (e.g. `my-analysis.qmd`).
+1. Copy this file (or any project in `projects/`) and rename it (e.g. `my-project.qmd`).
 2. Edit the YAML: `title`, `description`, `date`, `author`, and optional `image`, `categories`.
-3. Write your narrative and add code chunks, figures, or links below.
+3. Write your narrative below. No code runs — everything is static HTML.
 
-## Example: simple R code chunk
+## Example: static code block (display only)
 
-You can embed executable R (or Python) code. Readers see the code and output.
+You can show code for readers without executing it. Use plain fenced code blocks:
 
-```{r}
-#| label: fig-simple-plot
-#| fig-cap: "Example plot — replace with your own data and visualization."
-#| echo: true
-
-x <- seq(0, 2 * pi, length.out = 50)
-y <- sin(x)
-plot(x, y, type = "l", col = "#2c5282", lwd = 2,
-     xlab = "x", ylab = "sin(x)", main = "Simple sine wave")
+```python
+import pandas as pd
+df = pd.read_csv("data.csv")
+df.plot(kind="bar")
 ```
 
-## Embedding static or interactive visuals
-
-- **Static:** Use `knitr`/Jupyter to generate plots; they appear in the page.
-- **Interactive:** Save HTML from Plotly, Leaflet, etc., and embed with an iframe or link.
-- **GitHub / Observable:** Link to notebooks or dashboards and add a short summary here.
-
-## Optional: freeze heavy computations
-
-If rendering is slow or environment-specific, add to `projects/_metadata.yml`:
-
-```yaml
-freeze: true
+```r
+library(ggplot2)
+ggplot(data, aes(x = year, y = value)) + geom_line()
 ```
 
-Then re-render individual posts when you change them; the rest of the site will reuse frozen output.
+## Linking to live work
+
+- **GitHub:** Link to a repo or notebook, e.g. `[View code on GitHub](https://github.com/you/repo)`.
+- **Observable / Colab / Binder:** Paste the link and a short description.
+- **Screenshots:** Add images to `images/` and reference them with `![alt](images/name.png)`.
+
+No R or Python installation is required to build this site — just run `quarto render` and the Projects page will be plain HTML.
