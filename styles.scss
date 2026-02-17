@@ -1,114 +1,270 @@
 /*-- scss:defaults --*/
 
-// Typography & colors — modern, readable, data-science friendly
+// Typography — clean, professional, data-science portfolio
 $font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !default;
 $font-family-monospace: "JetBrains Mono", "Fira Code", "Consolas", monospace !default;
 $headings-font-weight: 600 !default;
-$body-color: #212529 !default;
-$body-bg: #f8f9fa !default;
-$primary: #2c5282 !default;
-$link-color: #2c5282 !default;
-$link-hover-color: #1a365d !default;
-$code-color: #c7254e !default;
-$code-bg: #f4f4f4 !default;
+$headings-letter-spacing: -0.02em !default;
+
+// Palette — sleek slate/teal, easy on the eyes
+$body-color: #1e293b !default;
+$body-bg: #fafbfc !default;
+$primary: #0f766e !default;        // teal-700
+$secondary: #475569 !default;     // slate-600
+$link-color: #0d9488 !default;     // teal-600
+$link-hover-color: #0f766e !default;
+$code-color: #0f766e !default;
+$code-bg: #f1f5f9 !default;
+$border-color: #e2e8f0 !default;
+
+// Bootstrap overrides for navbar (navbar uses $primary for background)
+$navbar-bg: #0f766e !default;
+$navbar-fg: rgba(255, 255, 255, 0.95) !default;
+$navbar-hover: #fff !default;
 
 /*-- scss:rules --*/
 
-// Import Google Fonts (Quarto will inline; optional: add to _quarto.yml margin-header)
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-// Main title block (home/about)
-.quarto-title-block {
-  .title {
-    font-size: clamp(2rem, 5vw, 3rem);
+// ----- Base & layout -----
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.column-page {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem;
+}
+
+.column-page > * + * {
+  margin-top: 1.35rem;
+}
+
+// ----- Navbar — minimal, fixed -----
+#quarto-header {
+  .navbar {
+    background: $navbar-bg !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    padding: 0.5rem 0;
+  }
+  .navbar-brand {
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: $primary;
+    color: $navbar-fg !important;
   }
-  .subtitle {
-    font-size: 1.1rem;
-    font-weight: 400;
-    opacity: 0.9;
+  .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem !important;
+    transition: color 0.15s, background 0.15s;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    color: $navbar-hover !important;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: $navbar-fg;
   }
 }
 
-// About / Jolla template tweaks
-.about-entity {
-  .about-image {
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+// ----- Hero / About (Jolla template) -----
+.quarto-about-jolla {
+  padding-top: 1.5rem;
+}
+
+.quarto-title-block {
+  .title {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: $body-color;
+    line-height: 1.2;
   }
-  .about-links a {
+  .subtitle {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: $secondary;
+    margin-top: 0.25rem;
+  }
+}
+
+.about-image {
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(15, 118, 110, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s ease;
+}
+
+.about-image:hover {
+  box-shadow: 0 16px 48px rgba(15, 118, 110, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
-    transition: background 0.2s, transform 0.15s;
+    background: $code-bg;
+    color: $primary;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid $border-color;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
   }
-  .about-links a:hover {
+  a:hover {
+    background: rgba(15, 118, 110, 0.08);
+    color: $link-hover-color;
+    border-color: rgba(15, 118, 110, 0.25);
     transform: translateY(-1px);
   }
 }
 
-// Code blocks — clearer hierarchy
-pre.sourceCode {
-  border-radius: 8px;
-  border-left: 4px solid $primary;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-code:not(pre sourceCode code) {
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-size: 0.9em;
+.about-sep {
+  margin: 2rem 0 1rem;
+  border: none;
+  border-top: 1px solid $border-color;
 }
 
-// Cards and listing grid (Projects)
-.quarto-listing-default .listing-card,
-.grid .quarto-listing-default .listing-card {
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: box-shadow 0.2s, transform 0.2s;
-  overflow: hidden;
-}
-.quarto-listing-default .listing-card:hover,
-.grid .quarto-listing-default .listing-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-.listing-card-title a {
-  font-weight: 600;
-  color: $primary;
-}
-.listing-card-description {
-  color: #495057;
-  font-size: 0.95rem;
+// ----- Main content -----
+.content {
+  p {
+    margin-bottom: 0.5rem;
+  }
 }
 
-// Navbar
-.navbar {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-}
-.navbar-brand {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-// Page content spacing
-.column-page {
-  max-width: 900px;
-}
-.column-page > * + * {
-  margin-top: 1.25rem;
-}
-
-// Section dividers (optional; you use ---- in content)
 hr {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid $border-color;
   margin: 2rem 0;
 }
 
-// Footer
-.page-footer {
-  padding: 1.5rem 0;
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 118, 110, 0.35);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+a:hover {
+  border-bottom-color: $link-hover-color;
+}
+
+// ----- Code -----
+pre.sourceCode {
+  border-radius: 10px;
+  border: 1px solid $border-color;
+  border-left: 4px solid $primary;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 1rem 1.25rem;
   font-size: 0.9rem;
-  color: #6c757d;
+}
+
+code:not(pre sourceCode code) {
+  padding: 0.2em 0.45em;
+  border-radius: 5px;
+  font-size: 0.88em;
+  background: $code-bg;
+  color: $code-color;
+  border: 1px solid rgba(15, 118, 110, 0.15);
+}
+
+// ----- Listing / Project cards -----
+.quarto-listing-default .listing-card,
+.grid .quarto-listing-default .listing-card {
+  border-radius: 12px;
+  border: 1px solid $border-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.25s ease, transform 0.2s ease, border-color 0.2s;
+  overflow: hidden;
+  background: #fff;
+}
+
+.quarto-listing-default .listing-card:hover,
+.grid .quarto-listing-default .listing-card:hover {
+  box-shadow: 0 12px 32px rgba(15, 118, 110, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+  border-color: rgba(15, 118, 110, 0.2);
+}
+
+.listing-card-title a {
+  font-weight: 600;
+  color: $primary;
+  border-bottom: none;
+}
+
+.listing-card-title a:hover {
+  color: $link-hover-color;
+}
+
+.listing-card-description {
+  color: $secondary;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+// Listing page title
+.quarto-title-block .listing-subtitle {
+  color: $secondary;
+  font-size: 1rem;
+}
+
+// ----- Publications & education -----
+#quarto-document-content h1,
+#quarto-document-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: $body-color;
+}
+
+#quarto-document-content h1:first-child,
+#quarto-document-content h2:first-child {
+  margin-top: 0;
+}
+
+// ----- Footer -----
+.page-footer {
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  color: $secondary;
+  border-top: 1px solid $border-color;
+  margin-top: 3rem;
+}
+
+.page-footer a {
+  border-bottom: none;
+  color: $primary;
+}
+
+// ----- Search (Quarto overlay) -----
+#quarto-search-results .quarto-search-result {
+  border-radius: 8px;
+}
+
+// ----- Small polish -----
+blockquote {
+  border-left: 4px solid $primary;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: $secondary;
+  font-style: italic;
+}
+
+::selection {
+  background: rgba(15, 118, 110, 0.2);
 }
