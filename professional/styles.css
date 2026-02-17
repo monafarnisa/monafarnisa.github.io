@@ -148,9 +148,24 @@ main {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, 2fr);
   gap: 2.5rem;
   align-items: flex-start;
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-headshot {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  object-fit: cover;
 }
 
 .eyebrow {
@@ -516,6 +531,10 @@ main {
 @media (max-width: 860px) {
   .hero-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-photo {
+    order: -2;
   }
 
   .hero-card {
