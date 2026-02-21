@@ -29,6 +29,15 @@
         <a href="#education">Education</a>
         <a href="#research">Research &amp; Fieldwork</a>
       </nav>
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark and light mode"
+        aria-pressed="false"
+      >
+        Dark mode
+      </button>
     </header>
 
     <main class="main-content">
@@ -255,6 +264,37 @@
     </footer>
 
     <script>
+      // Theme toggle with local preference persistence
+      (function() {
+        var storageKey = 'professional-site-theme';
+        var root = document.documentElement;
+        var toggleBtn = document.getElementById('theme-toggle');
+        if (!toggleBtn) return;
+
+        function getPreferredTheme() {
+          var stored = localStorage.getItem(storageKey);
+          if (stored === 'light' || stored === 'dark') return stored;
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+          return 'light';
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+          var isDark = theme === 'dark';
+          toggleBtn.textContent = isDark ? 'Light mode' : 'Dark mode';
+          toggleBtn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        }
+
+        applyTheme(getPreferredTheme());
+
+        toggleBtn.addEventListener('click', function() {
+          var currentTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+          var nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          applyTheme(nextTheme);
+          localStorage.setItem(storageKey, nextTheme);
+        });
+      })();
+
       // Smooth scroll for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(function(link) {
         link.addEventListener('click', function(e) {
