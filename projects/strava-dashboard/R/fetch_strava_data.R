@@ -6,6 +6,11 @@ suppressPackageStartupMessages({
   library(lubridate)
 })
 
+# Optional local secrets file (gitignored).
+if (file.exists("keys.R")) {
+  source("keys.R", local = .GlobalEnv)
+}
+
 required <- c("STRAVA_APP_NAME", "STRAVA_CLIENT_ID", "STRAVA_CLIENT_SECRET")
 missing_vars <- required[!nzchar(Sys.getenv(required))]
 if (length(missing_vars) > 0) {
