@@ -28,4 +28,4 @@ At the [National Center for Ecological Analysis and Synthesis](https://www.nceas
 ## Links
 
 - [Wildfire Resilience Index](https://wildfireindex.org/)
-- Related publication: *Nationwide exposure of United States cultural heritage to wildfire* (In Review at Scientific Reports)
+- Related publication: [Wildfire risk to United States cultural resources](https://doi.org/10.1038/s41598-026-52407-9) (*Scientific Reports*, 2026)

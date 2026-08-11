@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+.Rproj.user/
+.httr-oauth
+.Rlib/
+keys.R
+data/activities.rds
