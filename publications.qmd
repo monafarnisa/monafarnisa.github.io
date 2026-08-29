@@ -17,6 +17,10 @@ about:
 
 ------------------------------------------------------------------------
 
+[King RA, Abowd L, Broderick CW, Bradley L, Czapanskiy MF, **Farnisa MM**, et al. (2026) Ten simple rules for effective use of generative AI for code development in environmental science. PLoS Comput Biol 22(8): e1014627. https://doi.org/10.1371/journal.pcbi.1014627](https://doi.org/10.1371/journal.pcbi.1014627)
+
+------------------------------------------------------------------------
+
 CR Fong, J Dudney, WD Hansen, MH Mockrin, MA Moritz, CJ Nolan, MP North, CM Tortorelli, RA King, CW Broderick, JM DeCesaro, EE Egg, **MM Farnisa**, BS Halpern. An index to assess wildfire resilience across the North American West. *In Review at OneEarth*.
 
 ------------------------------------------------------------------------
