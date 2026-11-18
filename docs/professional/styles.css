@@ -313,6 +313,40 @@ a:hover {
   gap: 1.5rem;
 }
 
+.org-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: linear-gradient(180deg, var(--sky-light) 0%, #f3fbff 100%);
+  border: 1px solid #c9e7f8;
+  border-radius: 22px;
+  padding: 1.15rem;
+}
+
+.org-group-unr {
+  background: linear-gradient(180deg, var(--orange-pale) 0%, #fff8f2 100%);
+  border-color: #f6d7b8;
+}
+
+.org-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sky-deep);
+  margin: 0.15rem 0.35rem 0;
+}
+
+.org-group-unr .org-label {
+  color: var(--orange-deep);
+}
+
+.org-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
